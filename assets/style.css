@@ -172,7 +172,7 @@ main {
     display:flex;
     flex-direction: column;
     align-items: center; 
-    margin:4em 0 0 0;
+    margin:4em 0 2em 0;
     
 
     /*border:solid 5px gold;*/
@@ -213,4 +213,16 @@ main {
     font-size: 3em;
     background-color: #B15E6C;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer-tup{
+    width:auto;
+    
+}
+
+footer{
+    height: 5em;
+    width:auto;
+    background-color: var(--anti-flash-white);
+
 }
