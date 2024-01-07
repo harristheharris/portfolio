@@ -204,21 +204,54 @@ main {
     width: 100%;
     border: solid 1px #F2E3EF;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     box-shadow: 1px 0px #EBEBEB;
+    
+}
+
+#hdr-bnnr{
+    height: auto;
+    width: auto;
+    background-color: #B15E6C;
 }
 
 #wlcm-sctn h1{
-    margin-bottom: 1em;
+    display: flex;
+    flex-basis: 2;
+    margin: 0  0 2px 4px;
     font-size: 3em;
-    background-color: #B15E6C;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: solid 5px teal;
 }
+
+
+
+#frm-hrrs-tup{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    border: solid 2px greenyellow;
+}
+
+#frm-hrrs{
+    font-size: .25em;
+
+    margin: 0 2em 0 1em;
+    border: solid 1px salmon;
+    display: flex;
+    
+    align-items: flex-end;
+}
+
+
 
 #footer-tup{
     width:auto;
     
 }
+
+
 
 footer{
     height: 5em;
