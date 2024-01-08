@@ -77,7 +77,7 @@ border-top: solid 2px black;*/
 
 }
 
-#harris{
+.harris{
     /**/
     color:#B15E6C;
 }
@@ -95,7 +95,7 @@ border-top: solid 2px black;*/
     justify-content: center;
     align-items: center;
     
-    background-color: var(--white-smoke);
+    /*background-color: var(--white-smoke);*/
     
 
 }
@@ -108,7 +108,7 @@ border-top: solid 2px black;*/
     height: 3em;
     
     justify-content: center;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
 
     overflow: hidden;
 
@@ -119,6 +119,10 @@ border-top: solid 2px black;*/
     flex-direction: row;
     align-items: center;
     text-align: center;
+}
+
+#nav-items li{
+    margin: 0 0 0 50px;
 }
 
 #nav-items a{
@@ -181,6 +185,10 @@ main {
 .row-v1{
     display: flex;
     flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+    align-items: flex-end;
+    /*border: solid 1px black;*/
 }
 
 #music-v1 img{
@@ -190,8 +198,15 @@ main {
 }
 
 .pg-nav{
+    /*border: red 1px solid;*/
     display: flex;
+    flex-direction: row-reverse;
+    
 
+}
+
+.pg-nav li{
+    margin: 0 0 0 15px;
 }
 
 .pg-v1 {
@@ -204,12 +219,14 @@ main {
     width: 100%;
     border: solid 1px #F2E3EF;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 1px 0px #EBEBEB;
     
 }
 
 #hdr-bnnr{
+    display: flex;
+    justify-content: space-between;
     height: auto;
     width: auto;
     background-color: #B15E6C;
@@ -218,40 +235,57 @@ main {
 #wlcm-sctn h1{
     display: flex;
     flex-basis: 2;
-    margin: 0  0 2px 4px;
+    margin: 2px 0 1px 4px;
     font-size: 3em;
     
     font-family:Georgia, 'Times New Roman', Times, serif;
-    border: solid 5px teal;
+    /*border: solid 5px teal;*/
 }
 
+.cntnt-tup p{
 
+    /*border: solid 1px red;*/
+    margin:20px;
+   
+}
+
+.photo-1-tup {
+    float: left;
+}
+
+#foto-ghst{
+    /*border: solid 1px #B15E6C;*/
+    color:var(--white-smoke);
+    height: 100px;
+    width: 100px;
+}
+
+.photo-1-tup img{
+    margin: 10px 0 0 10px;
+    border: solid 1px var(--white-smoke);
+}
 
 #frm-hrrs-tup{
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    border: solid 2px greenyellow;
+    /*border: solid 2px greenyellow;*/
 }
 
 #frm-hrrs{
-    font-size: .25em;
+    font-size: 1em;
 
-    margin: 0 2em 0 1em;
-    border: solid 1px salmon;
+    margin: 0 1em 0 1em;
+    /*border: solid 1px salmon;*/
     display: flex;
     
     align-items: flex-end;
 }
 
-
-
 #footer-tup{
     width:auto;
     
 }
-
-
 
 footer{
     height: 5em;
