@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Creating page defaults*/
 html {
     width:100%;
@@ -26,28 +30,31 @@ body {
 }
 
 header{
-/*Dimensions*/
-width: auto;
-height: auto;
-padding: 0 0 0 0;
+    /*Dimensions*/
+    width: auto;
+    height: auto;
+    
 
-/*Display and positioning*/
-display: flex;
-justify-content: space-between;
-align-items: center;
+    /*Display and positioning*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-background-color: #F6DBDD;
-box-shadow: 0px 2px #EBEBEB;
-/*Border so we can visualize the element
-border-bottom: solid 2px black;
-border-top: solid 2px black;*/
+    /*Styling*/
+    background-color: #F6DBDD;
+    box-shadow: 0px 2px #EBEBEB;
+
+    overflow: hidden;
+
+    /*Border so we can visualize the element
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;*/
 }
 
 #site-logo{
 
     /*Dimensions and borders*/
     margin: 1px 0 0 0px;
-    padding: 0 0px 0 0px;
     border-top: solid 2px var(--anti-flash-white);
     border-bottom: solid 2px var(--anti-flash-white);
     border-right: solid 2px var(--anti-flash-white);
@@ -60,25 +67,27 @@ border-top: solid 2px black;*/
     justify-content: start;
     align-items: center;
 
+    /*Styling*/
     background-color: var(--white-smoke);
     box-shadow: 0px 2px #F5F5F5;
     
 }
 
 #site-logo img{
+    /*applying margin and curved border to our 'boy looking left' img*/
     margin: 0px 5px 0px 5px;
     border-radius: 10px;
 }
 
 #site-logo p{
-    /*Font Stuff*/
+    /*Font Stuff for our header logo*/
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.10em;
 
 }
 
 .harris{
-    /**/
+    /*Used to change the color of 'harris' and the 'w's in header logo*/
     color:#B15E6C;
 }
 
@@ -101,6 +110,7 @@ border-top: solid 2px black;*/
 }
 
 #nav-items-tup{
+    /*Display*/
     display: flex;
     flex-direction: row;
     /*Dimensions and Borders*/
@@ -115,6 +125,8 @@ border-top: solid 2px black;*/
 }
 
 #nav-items{
+    /*Holding out main nav*/
+    /*Display and positioning*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,25 +134,29 @@ border-top: solid 2px black;*/
 }
 
 #nav-items li{
-    margin: 0 0 0 50px;
+    /*Adding margin to our nav li*/
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 0;
+    /*border: solid 1px black;*/
 }
 
 #nav-items a{
-   /*Dimensions and border*/
-    margin: 0 0 0 0;
+   /*Display*/
     display: block;
-   
-    /*border: solid 1px black;*/
-    
+
     /*text formating*/
     text-decoration: none;
     font-size: 1.25em;
     font-family:Tahoma, sans-serif;
     color:#1D0C12;
 
-    
+    /*border: solid 1px black;*/
 }
 
+
+/*Legacy code that we nay implement again later*/
 #zam:hover{
     height: auto;
     width: auto;
@@ -148,6 +164,7 @@ border-top: solid 2px black;*/
     border-radius: 50px 50px 50px 50px;
 }
 
+/*Legacy code that we nay implement again later*/
 #bam:hover{
     height: auto;
     width: auto;
@@ -155,6 +172,7 @@ border-top: solid 2px black;*/
     border-radius: 50px 50px 50px 50px;
 }
 
+/*Legacy code that we nay implement again later*/
 #glam:hover{
     height: auto;
     width: auto;
@@ -182,80 +200,116 @@ main {
     /*border:solid 5px gold;*/
 }
 
+/*This holds our track icon and second nav*/
 .row-v1{
+    /*Display and positioning*/
     display: flex;
     flex-direction: row;
-    width: 65%;
     justify-content: space-between;
     align-items: flex-end;
+    /*Dimension*/
+    width: 65%;
     /*border: solid 1px black;*/
 }
 
+/*Styling our track icon*/
 #music-v1 img{
     border-radius: 10px 10px 10px 10px;
     border: solid 1px #B3B3F1;
     opacity: .75;
 }
 
+/*Our second nav*/
 .pg-nav{
-    /*border: red 1px solid;*/
+    /*Display and positioning*/
     display: flex;
     flex-direction: row;
-    
+    /*border: red 1px solid;*/
 
 }
 
+/*Styling our second nav li's*/
 .pg-nav li{
     margin: 0 0 0 15px;
     font-weight: 500;
 }
 
+/*A pre set page or title card or whatever*/
 .pg-v1 {
-    /*border:solid 5px black;*/
+    /*Dimensions*/
     margin: 5px 0 10px 0;
     width:65%;
+    /*Styling*/
     box-shadow: 1px 3px #EBEBEB;
+    /*border:solid 5px black;*/
 }
 
+/*our welcome section title card*/
 #wlcm-sctn {
+    /*Dimensions*/
     width: 100%;
-    border: solid 1px #F2E3EF;
+    /*Display and positioning*/
     display:flex;
     flex-direction: column;
+    /*Styling*/
     box-shadow: 1px 0px #EBEBEB;
-    
+    border: solid 1px #F2E3EF;
 }
 
+/*welcome section header*/
 #hdr-bnnr{
+    /*Display and positioning*/
     display: flex;
     justify-content: space-between;
+    /*Dimensions*/
     height: auto;
     width: auto;
+
     background-color: #B15E6C;
 }
 
+/*Targeting our h1 within our welcome section*/
 #wlcm-sctn h1{
+    /*Display and positioning*/
     display: flex;
     flex-basis: 2;
+    /*Dimensions*/
     margin: 2px 0 1px 4px;
+    /*Font styling*/
     font-size: 3em;
-    
     font-family:Georgia, 'Times New Roman', Times, serif;
     /*border: solid 5px teal;*/
 }
 
-.cntnt-tup p{
+/*A container for our additional text in welcome banner*/
+#frm-hrrs-tup{
+    /*Dimensions*/
+    width: 50%;
+    /*Display and positioning*/
+    display: flex;
+    justify-content: flex-end;
 
-    /*border: solid 1px red;*/
-    margin:20px;
-    line-height: 1.5em;
-   
+    /*border: solid 2px greenyellow;*/
 }
 
+/*Additional text in welcome banner*/
+#frm-hrrs{
+    /*Font Styling*/
+    font-size: 1em;
+    /*Dimensions*/
+    margin: 0 1em 0 1em;
+    /*Display and positioning*/
+    display: flex;
+    align-items: flex-end;
+    /*border: solid 1px salmon;*/
+}
+
+/*floaitng our non profile pic to the left*/
 .photo-1-tup {
     float: left;
 }
 
+/*I onnly have this for spacing and I'm sure there is a better way but this is what we're doing for now*/
 #foto-ghst{
     /*border: solid 1px #B15E6C;*/
     color:var(--white-smoke);
@@ -263,85 +317,113 @@ main {
     width: 100px;
 }
 
+/*Styling our pp img*/
 .photo-1-tup img{
     margin: 10px 0 0 10px;
     border: solid 1px var(--white-smoke);
 }
 
-#frm-hrrs-tup{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    /*border: solid 2px greenyellow;*/
+/*Styling our p within our welcome section*/
+.cntnt-tup p{
+    /*border: solid 1px red;*/
+    margin:20px;
+    line-height: 1.5em; 
 }
 
-#frm-hrrs{
-    font-size: 1em;
-
-    margin: 0 1em 0 1em;
-    /*border: solid 1px salmon;*/
-    display: flex;
-    
-    align-items: flex-end;
-}
-
+/*Header and banner for this section*/
 #wrk-web-hdr{
     height: auto;
     width: auto;
     background-color: #BD7581;
 }
 
+/*Targetting our h2*/
 #wrk-web-hdr h2{
 
     font-size: 2em;
     text-align: center;
 }
 
+/*We created this to place our items that are currently in a column into a row that is in that column*/
 .pg-v2-v3-row{
+    /*Dimensions*/
     width: 65%;
+    /*Display and positioning*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/*A new type of page which is smaller and will be aside another page*/
 .pg-v3{
     background-color:;
+    /*Display and positioning*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*Dimensions*/
     margin: 5px 0 10px 0;
     width:19em;
+    /*Styling*/
     box-shadow: 1px 3px #EBEBEB;
 }
 
+.pg-v3 figcaption{
+    display: flex;
+    margin: 0 0 5px 0;
+
+}
+
+.pg-v3 a{
+    margin: 0px 10.5px 0px 4.5px;
+}
+
+/*Targeting our pg-v3 img*/
 .pg-v3 img{
     padding:30px 0 10px 0;
 }
 
+/*Targeting our pg-v3 p*/
 .pg-v3 p{
     padding: 5px 0 10px 0
 }
 
+/*I made the mistake of making pg-v3 too rigid so i made a new one that is slightly different*/
 .pg-v3-alt1{
     background-color:;
+    /*Display and positioning*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*Dimensions*/
     margin: 5px 0 10px 0;
     width:19em;
+    /*Styling*/
     box-shadow: 1px 3px #EBEBEB;
 }
 
+.pg-v3-alt1 figcaption{
+    display: flex;
+    margin: 0 0 5px 0;
+}
+
+.pg-v3-alt1 a{
+    margin: 0px 10.5px 0px 4.5px; 
+}
+
+/**/
 .pg-v3-alt1 img{
     padding:30px 0 10px 0;
 }
 
+/**/
 .pg-v3-alt1 p{
     padding: 5px 0 10px 0
 }
 
+/**/
 #pg-v3-alt2{
     background-color:;
     display: flex;
@@ -353,21 +435,38 @@ main {
     box-shadow: 1px 3px #EBEBEB;
 }
 
+/**/
 #pg-v3-alt2 img{
     padding:30px 0 10px 0;
 }
 
+/**/
 #pg-v3-alt2 p{
-    padding: 5px 0 10px 0
+    padding: 5px 0 10px 0;
 }
 
-
-.pg-v2 {
+#pg-v3-alt2 figcaption{
     display: flex;
+    margin: 0 0 5px 0;
+}
+
+#pg-v3-alt2 a{
+    margin: 0px 10.5px 0px 4.5px; 
+}
+
+/*Another preset page*/
+.pg-v2 {
+    /*Display*/
+    display: flex;
+    /*Dimensions*/
     margin: 5px 0 10px 0;
     width:35em;
+    /*Style*/
     box-shadow: 1px 3px #EBEBEB;
 }
+
+
+/*Anything below here and above footer is a mess and I'll get arount to it lol*/
 
 .pg-v2-row{
     width: 100%;
@@ -384,7 +483,8 @@ main {
     width: 100%;
     height:auto;
     padding: 3px 0 3px 0;
-    background-color:#FFCC85;
+    background-color:#35A7FF;
+    background-color:;
 }
 
 .prjct-hdr h3 {
@@ -396,18 +496,18 @@ main {
 
 #prjct-hdr-3 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     height:auto;
     padding: 3px 0 3px 0;
-    background-color:#32C35B;
+    background-color:#EF233C;
 }
 
 #prjct-hdr-3 h3 {
     font-size: 1.5em;
     font-family:'Arial Narrow Bold', sans-serif;
 
-    margin: 0 3px 0 0;
+    margin: 0 0px 0 5px;
 }
 
 #prjct-hdr-2{
@@ -432,7 +532,7 @@ main {
     width: 100%;
     height:auto;
     padding: 3px 0 3px 0;
-    background-color:#35A7FF;
+    background-color: #32C35B;
 }
 
 #prjct-hdr-4 h3 {
@@ -441,11 +541,15 @@ main {
 
     margin: 0 0px 0 3px; 
 }
+/*Mess zone ends here. Don't @ me*/
 
+/*Formating our p within our pages*/
+.p-f {
+    line-height: 1.1em;
+    margin: 10px;
+}
 
-
-
-
+/**/
 #footer-tup{
     width:auto;
     
@@ -456,4 +560,12 @@ footer{
     width:auto;
     background-color: var(--anti-flash-white);
 
+}
+
+@media screen and (max-width: 992px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
